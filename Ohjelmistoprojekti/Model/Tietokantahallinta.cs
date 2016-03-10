@@ -51,7 +51,7 @@ namespace Ohjelmistoprojekti.Model
                 }
 
                 
-                komento.Parameters.Add("@maara", maara);
+                komento.Parameters.AddWithValue("@maara", maara);
 
 
 
@@ -110,8 +110,8 @@ namespace Ohjelmistoprojekti.Model
                 // sql komento
                 komento.CommandText = "Insert Into Joukkueet (joukkueNimi, joukkuePisteet) Values (@joukkuenimi, @joukkuepisteet)";
 
-                komento.Parameters.Add("@joukkuenimi", joukkuenimi);
-                komento.Parameters.Add("@joukkuepisteet", joukkuepisteet);
+                komento.Parameters.AddWithValue("@joukkuenimi", joukkuenimi);
+                komento.Parameters.AddWithValue("@joukkuepisteet", joukkuepisteet);
 
                 // rivien vaikutus
                 int kuinkaMoneenRiviinVaikutti = komento.ExecuteNonQuery();
@@ -145,7 +145,7 @@ namespace Ohjelmistoprojekti.Model
 
                 komento.CommandText = "Delete From Joukkueet Where joukkueNimi=@joukkuenimi";
 
-                komento.Parameters.Add("@joukkuenimi", joukkuenimi);
+                komento.Parameters.AddWithValue("@joukkuenimi", joukkuenimi);
 
                 int kuinkaMoneenRiviinVaikutti = komento.ExecuteNonQuery();
 
@@ -179,9 +179,9 @@ namespace Ohjelmistoprojekti.Model
 
                 komento.CommandText = "UPDATE joukkueet SET joukkueNimi=@joukkuenimi, joukkuePisteet=@joukkuepisteet WHERE joukkueNimi=@vanhajoukkue";
 
-                komento.Parameters.Add("@joukkuenimi", joukkuenimi);
-                komento.Parameters.Add("@vanhajoukkue", vanhajoukkue);
-                komento.Parameters.Add("@joukkuepisteet", joukkuepisteet);
+                komento.Parameters.AddWithValue("@joukkuenimi", joukkuenimi);
+                komento.Parameters.AddWithValue("@vanhajoukkue", vanhajoukkue);
+                komento.Parameters.AddWithValue("@joukkuepisteet", joukkuepisteet);
 
                 int kuinkaMoneenRiviinVaikutti = komento.ExecuteNonQuery();
 
