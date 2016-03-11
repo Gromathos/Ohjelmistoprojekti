@@ -1,7 +1,7 @@
 # Ohjelmistoprojekti
 
 Ohjelmistoprojekti was a school project that I've decided to upload to GitHub.
-The project was created using c# programming language with Visual Studio 2015. It also uses MySQL database to get its data.
+The project was created using c# programming language with Visual Studio 2015. It also uses SQL database to get its data.
 
 ## Getting Ohjelmistoprojekti running
 
