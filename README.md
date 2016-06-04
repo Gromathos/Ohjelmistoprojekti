@@ -5,7 +5,7 @@ Ohjelmistoprojekti is a small school project that allows the user to add teams, 
 
 ## Getting Ohjelmistoprojekti running
 
-1. Download xampp and install it(https://www.apachefriends.org/index.html).
+1. Get Xampp (https://www.apachefriends.org/index.html).
 2. Get Visual Studio (https://www.visualstudio.com/)
   3. Get the code and add the mysql references right-click "ohjelmistoprojekti" -> Add -> Reference and choose the files.
 4. Run xampp and start mysql
